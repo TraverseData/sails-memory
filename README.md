@@ -4,6 +4,11 @@
 
 An in-memory object store which works great as a bundled, starter database (with the strict caveat that it is for non-production use only).
 
+`NOTE:` This version does not store objects in memory unless explicitly set via the `SAILS_MEMORY_STORE` environment variable.
+
+> ### (OPTIONAL) Environment Variables:
+> `SAILS_MEMORY_STORE`: `'true'` - will enable the storage of created objects in local memory. Otherwise the object is transient in nature. 
+
 > ### This adapter is compatible with Sails v0.12.x and earlier.  
 > For Sails 1.0, use [`sails-disk` with the `inMemoryOnly` option](https://github.com/balderdashy/sails-docs/blob/1.0/concepts/extending-sails/Adapters/adapterList.md#sails-disk).  If you&rsquo;re interested in upgrading the traditional, standalone `sails-memory` adapter in this repo for use with Sails 1.0, please [contact us](http://sailsjs.com/contact).
 
